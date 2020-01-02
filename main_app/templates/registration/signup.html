@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class="container" style='width:40%'>
 
 <h1>Sign Up</h1>
 
@@ -8,7 +9,10 @@
 <form method="post" action="{% url 'signup' %}">
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="submit" class="btn" value="signup">
+  <input type="submit" class="btn blue darken-4" value="signup">
 </form>
+</div>
+</div>
+<br><br>
 
 {% endblock %}
